@@ -3,7 +3,7 @@ public final class korlibs/compression/deflate/DeflaterNative_jvmKt {
 }
 
 public abstract interface class korlibs/compression/deflate/IDeflater : korlibs/io/compression/CompressionMethod {
-	public abstract fun getName ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
 }
 
 public final class korlibs/compression/deflate/IDeflater$DefaultImpls {
@@ -263,10 +263,11 @@ public class korlibs/io/compression/CompressionContext {
 }
 
 public abstract interface class korlibs/io/compression/CompressionMethod {
-	public abstract fun compress (Lkorlibs/io/stream/AsyncInputStream;Lkorlibs/io/stream/AsyncOutputStream;Lkorlibs/io/compression/CompressionContext;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public abstract fun getLevel ()I
-	public abstract fun getName ()Ljava/lang/String;
-	public abstract fun uncompress (Lkorlibs/io/stream/AsyncInputStream;Lkorlibs/io/stream/AsyncOutputStream;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun compress (Lkorlibs/io/stream/AsyncInputStream;Lkorlibs/io/stream/AsyncOutputStream;Lkorlibs/io/compression/CompressionContext;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun compress$default (Lkorlibs/io/compression/CompressionMethod;Lkorlibs/io/stream/AsyncInputStream;Lkorlibs/io/stream/AsyncOutputStream;Lkorlibs/io/compression/CompressionContext;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public fun getLevel ()I
+	public fun getName ()Ljava/lang/String;
+	public fun uncompress (Lkorlibs/io/stream/AsyncInputStream;Lkorlibs/io/stream/AsyncOutputStream;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
 public final class korlibs/io/compression/CompressionMethod$DefaultImpls {
