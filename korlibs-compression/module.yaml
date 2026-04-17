@@ -8,10 +8,10 @@ aliases:
   - jvmAndAndroid: [jvm, android]
 
 dependencies:
-  - com.soywiz:korlibs-io-stream:6.0.0: exported
-  - com.soywiz:korlibs-concurrent:6.0.0: exported
-  - com.soywiz:korlibs-checksum:6.0.0
-  - com.soywiz:korlibs-math-core:6.0.0
-  - com.soywiz:korlibs-datastructure-core:6.0.0
+  - org.korge:korlibs-io-stream:6.1.0: exported
+  - org.korge:korlibs-concurrent:6.1.0: exported
+  - org.korge:korlibs-checksum:6.1.0
+  - org.korge:korlibs-math-core:6.1.0
+  - org.korge:korlibs-datastructure-core:6.1.0
 
 test-dependencies:
